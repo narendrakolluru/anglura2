@@ -20,7 +20,7 @@ Note: copy config files from above project.
  
  commands to create app folder
  
-   mkdir app
+    mkdir app
    
     cd app
     
@@ -34,8 +34,8 @@ Note: copy config files from above project.
   
   The main.ts file tells Angular to load the component.
   
-  Now create a index.html in your project folder with all needed url
-  
-  Compile and Run
-   
+  Now create a index.html in your project folder with all needed url.
+  
+  Compile and Run.
+  
    npm start
