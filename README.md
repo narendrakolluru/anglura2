@@ -14,7 +14,7 @@ Note: copy config files from above project.
 
  To Install npm run below command in command promt.
  
-  # npm install .
+   npm install
   
  Create a sub-folder called app/ inside your project folder to the place Angular app components.
  
