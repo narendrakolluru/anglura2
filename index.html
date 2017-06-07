@@ -1,26 +1,75 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
-    <script src="https://code.angularjs.org/tools/system.js"></script>
-    <script src="https://code.angularjs.org/tools/typescript.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
-    <script>
-      System.config({
-        transpiler: 'typescript',
-        typescriptOptions: { emitDecoratorMetadata: true },
-        packages: {'app': {defaultExtension: 'ts'}},
-        //map: { 'app': './angular2/src/app' }
-      });
-      System.import('app/environment_main')
-            .then(null, console.error.bind(console));
-    </script>
+    <title>ANGULAR2-JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <base href="/">
+    <link href="app/vendor/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+    <link href="app/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app/css/style.css">
+
+
+    <!-- 1. Load libraries -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+    <script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+    <script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+    <script src="node_modules/@angular/router/bundles/router.umd.js"></script>
+    <script src="node_modules/@angular/forms/bundles/forms.umd.js"></script>
+    <script src="node_modules/@angular/http/bundles/http.umd.js"></script>
+
+
+    <script type="text/javascript" src="app/vendor/jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="app/vendor/jquery/jquery-migrate-1.1.0.min.js"></script>
+    <script type="text/javascript" src="app/vendor/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="app/vendor/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="app/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/vendor/jquery/jquery-scrolify.js"></script>
+
+
+    <script src='app/directives/app.loading.js'></script>
+    <script src='app/components/home.component.js'></script>
+     <script src='app/routes/app.routes.js'></script>
+    <script src='app/app.component.js'></script>
+   
+    <script src='app/app.module.js'></script>
+    <script src='app/main.js'></script>
+
+
+
+
   </head>
-<body>
-   <my-app>Loading.....</my-app>
-</body>
+
+  <!-- 3. Display the application -->
+  <body class="">
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="page-loader fade in"><span class="spinner">Loading...</span></div>
+    <!-- end #page-loader -->
+    <my-app></my-app>
+    
+   
+    
+   
+        <!--script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrjTZIGsRLPJp_83Xr39DMADWJsP5HwIQ">
+        </script-->
+        <!--script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-90037622-1', 'auto');
+          ga('send', 'pageview');
+
+        </script-->
+  </body>
+
 </html>
