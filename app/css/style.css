@@ -1,0 +1,58 @@
+/*****   loading spinner css starts      *****/
+#page-loader{
+        padding-top: 25%;
+}
+
+.spinner .fa-spin{
+    font-size:15px
+}
+
+
+.page-loader {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    font-family: Arial;
+}
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+    to {-webkit-transform: rotate(360deg);}
+}
+.spinner {
+    min-width: 100px;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+    margin-left: -50px;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    line-height: 16px;
+}
+.spinner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-left: -54px;
+}
+.spinner:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, .3);
+    border-top-color: rgba(0, 0, 0, .6);
+    animation: spinner .6s linear infinite;
+    -webkit-animation: spinner .6s linear infinite;
+}
+
+/*****   loading spinner css ends      *****/
