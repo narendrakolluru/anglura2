@@ -5,6 +5,10 @@
       declarations: [
         app.homeComponent,
         app.AppComponent,
+        app.left_sidebar_Component,
+        app.right_sidebar_Component,
+        app.main_content_Component,
+        app.headerComponent,
         app.Loading
       ],
       bootstrap: [ app.AppComponent ]
