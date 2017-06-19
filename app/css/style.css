@@ -56,3 +56,40 @@
 }
 
 /*****   loading spinner css ends      *****/
+.page-container__header {
+  height: 50px;
+  background-color: #d9edf7;
+}
+
+
+.page-main_container {
+  height: 100%;
+  background-color: skyblue;
+  text-align: center;
+}
+.page-left_sidebar {
+  height: 100%;
+  padding: 10px;
+  background-color: #3C454D;
+  width: 250px;
+  font-size: 17px;
+  font-weight: 300;
+  float: left;
+}
+
+.page-left_sidebar p {
+  padding-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.page-left_sidebar>p>:hover {
+  background: indianred;
+}
+
+.page-right_sidebar {
+  height: 100%;
+  width: 50px;
+  background-color: blue;
+  float: right;
+}
