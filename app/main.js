@@ -5,5 +5,3 @@
       .bootstrapModule(app.AppModule);
   });
 })(window.app || (window.app = {}));
-
-

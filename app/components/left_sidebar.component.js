@@ -1,8 +1,9 @@
   (function(app) {
-  app.homeComponent =
+  app.left_sidebar_Component =
     ng.core.Component({
       //styleUrls: ['app/css/my-app.css'],
-      templateUrl: 'app/html/home.html',
+      selector: 'left-sidebar',
+      templateUrl: 'app/html/left_sidebar.html',
 
     })
     .Class({

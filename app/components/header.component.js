@@ -1,8 +1,9 @@
   (function(app) {
-  app.homeComponent =
+  app.headerComponent =
     ng.core.Component({
       //styleUrls: ['app/css/my-app.css'],
-      templateUrl: 'app/html/home.html',
+      selector: 'headerComponent',
+      templateUrl: 'app/html/header.html',
 
     })
     .Class({
